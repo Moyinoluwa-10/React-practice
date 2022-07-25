@@ -1,0 +1,20 @@
+.box-container h1 {
+    color: red;
+    font-size: 40px;
+    padding: 20px;
+
+}
+
+.box-container p {
+    color: blue;
+}
+
+.box-container {
+    max-width: 600px;
+    min-height: 300px;
+    padding: 5px;
+    margin: auto;
+    border: 2px solid red;
+    background-color: #c0c0c0;
+    margin-bottom: 50px;
+}
