@@ -42,23 +42,104 @@ import './App.css'
 //   )
 // }
 
-import React from 'react'
 import Jokes from './Jokes'
 import Navbar from './components/Navbar'
 import {Box} from './components/box/Box'
+import Children from './components/Children'
 
 function App() {
+  // console.log("hello");
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  
+  const objArr = [
+    {
+      name: 'Foo',
+      age: 22,
+      class: 'JS1'
+    },
+
+    {
+      name: 'Foo',
+      age: 12,
+      class: 'JS1'
+    },
+
+    {
+      name: 'Tunde',
+      age: 13,
+      class: 'JS32'
+    },
+
+    {
+      name: 'Favour',
+      age: 14,
+      class: 'JS3'
+    },
+
+    {
+      name: 'Tolu',
+      age: 15,
+      class: 'SS1'
+    },
+
+    {
+      name: 'Bola',
+      age: 16,
+      class: 'SS2'
+    },
+
+    {
+      name: 'Hammed',
+      age: 17,
+      class: 'SS3'
+    }
+
+  ];
+
+  const renderObjArr = objArr.map((item, index) => {
+    // console.log(item);
+    return <Box item={item} key={index} />;
+  })
+
   return (
-    // <><div>App</div>
-    // <Jokes /></>
-    // console.log("hello");
     <>
+
+      {/* <><div>App</div> */}
       {/* <h1>App</h1> */}
-      {/* <Jokes /> */}
+      {/* <Jokes /> */}  
       <Navbar />
-      <Box header={'Welcome to React'} text1={'How are you?'} text2={'What are you doing'} /> 
-      <Box header={'Welcome to School'} text1={'How old are you?'} text2={'What is your course?'} /> 
-      <Box header={'.......'} text1={'weeeeeeeeeeeee?'} text2={'youuuuuuuuuuu?'} /> 
+    
+      {/* <Box 
+      header={'Welcome to React'} 
+      text1={'How are you?'} 
+      text2={'What are you doing'} 
+      className={'box1'} 
+      border={'2px solid green'}
+      arr={arr}
+      /> 
+
+      <Box 
+      // header={'Welcome to School'} 
+      text1={'How old are you?'} 
+      text2={'What is your course?'} 
+      // className={'box2'} 
+      // border={'2px solid blue'} 
+      /> 
+      
+      <Box 
+      header={'.......'} 
+      text1={'weeeeeeeeeeeee?'} 
+      text2={'youuuuuuuuuuu?'} 
+      className={'box3'} 
+      border={'2px solid grey'} 
+      />
+
+      {renderObjArr} */}
+
+      < Children >
+        <p>Hello World!!!</p>
+      </Children>
+
     </>
   )
 }

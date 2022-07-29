@@ -18,3 +18,14 @@
     background-color: #c0c0c0;
     margin-bottom: 50px;
 }
+
+.box1 {
+    background-color: aqua;
+    color: blueviolet;
+}
+
+.box1 p {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
